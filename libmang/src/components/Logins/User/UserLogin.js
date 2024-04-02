@@ -22,7 +22,7 @@ const UserLogin=()=>{
                 </div>
                 <div className={alstyles.user}>
                     
-                    <NavLink to="/SignUpAsUser" >
+                    <NavLink to="/LogedinUserPortal" >
                     <label className={alstyles.blabel}>Login</label>
                     </NavLink>
                     <label className={alstyles.blabel}>Cancel</label>

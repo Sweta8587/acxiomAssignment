@@ -1,6 +1,6 @@
 import React from "react";
 import alstyles from "../Admin/AdminLogin.module.css"
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const VenderSignUp = () => {
 

@@ -1,6 +1,6 @@
 import React from "react";
 import alstyles from "../Admin/AdminLogin.module.css"
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const UserSignUp = () => {
 
@@ -26,7 +26,10 @@ const UserSignUp = () => {
                 <div className={alstyles.user}>
                     
                     <button className={alstyles.blabel}>Cancel</button>
+                    
+                    <NavLink to="/LoginPortal" >
                     <button className={alstyles.blabel}>Login</button>
+                    </NavLink>
                     
                     
                     
