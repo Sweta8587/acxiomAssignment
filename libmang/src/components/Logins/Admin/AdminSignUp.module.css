@@ -1,0 +1,49 @@
+.inparea{
+    margin:auto;
+    height: 350px;
+    width: 750px;
+    background-color: rgba(154, 152, 152, 0.584);
+}
+
+.inpbox{
+    margin:20px;
+    height: 30px;
+    width: 200px;
+    
+}
+
+.user{
+    margin:15px;
+}
+
+.llabel{
+    height: 30px;
+    width: 1500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.blabel{
+    height: 40px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 30px;
+    background-color: rgb(155, 155, 155);
+}
+.bblabel{
+    height: 20px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 30px;
+    background-color: rgb(155, 155, 155);
+}

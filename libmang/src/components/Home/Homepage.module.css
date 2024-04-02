@@ -1,0 +1,15 @@
+.loginArea{
+    height:500px;
+    width:500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+
+.logbutton{
+  height: 40px;
+  width: 70px;
+  background-color: green;
+  margin: 5px;
+  border-radius: 10px;
+}
