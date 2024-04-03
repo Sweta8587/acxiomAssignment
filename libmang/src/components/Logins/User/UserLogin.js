@@ -28,8 +28,11 @@ const UserLogin=()=>{
                     <label className={alstyles.blabel}>Cancel</label>
                 </div>
                 <div>
-                    Not sign? <label className={alstyles.blabel}>SignUp</label>
+                    Not Registered? <NavLink to="/SignUpAsUser">
+                    <button className={alstyles.bblabel}>Sign Up</button>
+                    </NavLink>
                 </div>
+                
             </div>
         </>
     )

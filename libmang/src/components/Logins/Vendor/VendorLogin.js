@@ -83,6 +83,11 @@ const VendorLogin = () => {
                     </button>
 
                 </div>
+                {/* <div>
+                    Not Vendor? <NavLink to="/SignUpAsVendor">
+                    <button className={alstyles.blabel}>Sign Up</button>
+                    </NavLink>
+                </div> */}
                 <div>
                     New Vendor? <button className={alstyles.blabel}>SignUp</button>
                 </div>

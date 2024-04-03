@@ -27,9 +27,6 @@ const UserPortal = () => {
                     
                     <button className={alstyles.blabel}>LogOut</button>
                     
-                    
-                    
-                    
                 </div>
                 
                 
