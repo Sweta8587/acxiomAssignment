@@ -12,8 +12,14 @@ const VendorPortal = () => {
                 <h1 className={alstyles.llabel}>WELCOME Vendor</h1>
                 <div className={alstyles.llabel}>
 
-                    <button className={alstyles.blabel}>Product Status</button>
+                <NavLink to="/SectionToShowProductStatus" >
+                <button className={alstyles.blabel}>Product Status</button>
+                    </NavLink>
+                    <NavLink to="/SectionToShowRequestItem" >
                     <button className={alstyles.blabel}>Request Item</button>
+                    </NavLink>
+                    
+                    
                     <button className={alstyles.blabel}>View Product</button>
                     <button className={alstyles.blabel}>Log Out</button>
 
