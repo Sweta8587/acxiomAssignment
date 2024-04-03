@@ -2,7 +2,7 @@
     margin:auto;
     height: 350px;
     width: 750px;
-    background-color: rgba(154, 152, 152, 0.584);
+    background-color: rgba(25, 94, 222, 0.584);
 }
 
 .inpbox{
@@ -17,23 +17,26 @@
 }
 
 .llabel{
-    height: 30px;
-    width: 1500px;
+    height: 70px;
+    width: 85%;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
     padding: 5px;
-    margin: 10px;
-    background-color: blue;
+    margin: auto;
+    margin-top: 15px;
+
+
+    background-color: rgb(150, 150, 150);
 }
 
 .blabel{
     height: 30px;
-    width: 1500px;
+    width: 100px;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
     padding: 5px;
     margin: 10px;
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(150, 150, 150);
 }

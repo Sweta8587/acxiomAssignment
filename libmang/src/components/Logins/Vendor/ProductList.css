@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.add-product {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-product:hover {
+  background-color: #3e8e41;
+}
+
+/* Optional styles for improved aesthetics */
+img {
+  max-width: 50px;
+  height: auto;
+}
+
+.product-list {
+  overflow-x: auto; /* Enable horizontal scrolling if table overflows container */
+}
+
+.action {
+  text-align: center; /* Center action buttons within the cell */
+}

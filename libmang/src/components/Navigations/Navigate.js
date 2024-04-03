@@ -9,6 +9,7 @@ import UserSignUp from "../Logins/User/UserSignUp";
 import VenderSignUp from "../Logins/Vendor/VendorSignUp";
 import UserPortal from "../Logins/User/UserPortal";
 import VendorPortal from "../Logins/Vendor/VendorPortal";
+import ProductList from "../Logins/Vendor/ProductList";
 
 
 const Navigate=()=>{
@@ -25,6 +26,7 @@ const Navigate=()=>{
             <Route path="/SignUpAsUser" element={<UserSignUp/>}/>
             <Route path="/LogedinUserPortal" element={<UserPortal/>}/>
             <Route path="/LogedinVendorPortal" element={<VendorPortal/>}/>
+            <Route path="/SectionToShowItem" element={<ProductList/>}/>
         </Routes>
 
 

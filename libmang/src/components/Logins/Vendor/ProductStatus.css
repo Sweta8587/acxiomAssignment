@@ -1,0 +1,60 @@
+.dashboard {
+    width: 800px;
+    margin: 50px auto;
+    font-family: sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .logout {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout p {
+    margin-right: 10px;
+  }
+  
+  .product-list-container {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  .add-product {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    float: right; /* Align button to the right */
+  }
+  
+  .add-product:hover {
+    background-color: #3e8e41;
+  }
+  
