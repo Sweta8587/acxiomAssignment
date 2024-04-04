@@ -20,7 +20,7 @@ const VendorLogin = () => {
             navigate("/LogedinVendorPortal");
 
             let response = await fetch("http://localhost:5000/logAsVendor", {
-                method: "POST",
+                method: "GET",
                 body: JSON.stringify({
                     UserId: username,
                     Password: password,
