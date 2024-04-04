@@ -3,22 +3,36 @@ import alstyles from "../Vendor/ViewProducts.module.css"
 
 
 function ViewProducts() { // Renamed component name
-  const [products, setProducts] = useState([]); // Assuming you have product data
+  var [products, setProducts] = useState([]); // Assuming you have product data
 
   // ... (Optional) Logic for fetching product data from API or database
+  async function getProds() {
+    const response = await fetch("http://localhost:5000/SectionToShowItem", {
+      method: "GET",
+      headers: {
+        "content-type": "application/json",
+      },
+    });
 
+    if (response.status === 200) {
+      const prods = await response.json();
+      setProducts(prods)
+    }
+  }
+
+  getProds();
   return (
     <div className={alstyles.inparea}>
-    <h1 className={alstyles.llabel}>Vendor Name</h1>
-      
-        <nav>
-          <ul>
+      <h1 className={alstyles.llabel}>Vendor Name</h1>
+
+      <nav>
+        <ul>
           <button className={alstyles.blabel}>Home</button>
           <button className={alstyles.blabel}>Log Out</button>
-            {/* Add more navigation links here if needed */}
-          </ul>
-        </nav>
-      
+          {/* Add more navigation links here if needed */}
+        </ul>
+      </nav>
+
       <div className="main-section">
         {/* Optional search bar component here */}
         <table className="vendor-data-table">
