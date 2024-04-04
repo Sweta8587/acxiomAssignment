@@ -18,9 +18,11 @@ const VendorPortal = () => {
                     <NavLink to="/SectionToShowRequestItem" >
                     <button className={alstyles.blabel}>Request Item</button>
                     </NavLink>
+                    <NavLink to="/SectionToShowViewProducts" >
+                    <button className={alstyles.blabel}>View Products</button>
+                    </NavLink>
                     
                     
-                    <button className={alstyles.blabel}>View Product</button>
                     <button className={alstyles.blabel}>Log Out</button>
 
 

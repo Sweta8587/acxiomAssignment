@@ -12,6 +12,7 @@ import VendorPortal from "../Logins/Vendor/VendorPortal";
 import ProductList from "../Logins/Vendor/ProductList";
 import ProductStatus from "../Logins/Vendor/ProductStatus";
 import RequestItem from "../Logins/Vendor/RequestItem";
+import ViewProducts from "../Logins/Vendor/ViewProducts";
 
 
 const Navigate=()=>{
@@ -31,6 +32,7 @@ const Navigate=()=>{
             <Route path="/SectionToShowItem" element={<ProductList/>}/>
             <Route path="/SectionToShowProductStatus" element={<ProductStatus/>}/>
             <Route path="/SectionToShowRequestItem" element={<RequestItem/>}/>
+            <Route path="/SectionToShowViewProducts" element={<ViewProducts/>}/>
         </Routes>
 
 
