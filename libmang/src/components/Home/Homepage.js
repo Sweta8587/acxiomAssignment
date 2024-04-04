@@ -8,7 +8,7 @@ const Homepage=()=>{
     return(
         <>
         <div className={homeStyles.loginArea}>
-            
+            <div><center><h3>Login as</h3></center></div>
             <NavLink to="/logAsVendor" >
             <button className={homeStyles.logbutton}>Vendor</button>
             </NavLink>

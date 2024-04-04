@@ -1,8 +1,11 @@
 .loginArea{
-    height:500px;
-    width:500px;
-    border: 1px solid black;
-    margin: auto;
+  height:100px;
+  width:300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 15px;
+    padding: 100px;
+    padding-top: 50px;
 }
 
 
@@ -12,4 +15,5 @@
   background-color: green;
   margin: 5px;
   border-radius: 10px;
+  margin-left: 20px;
 }

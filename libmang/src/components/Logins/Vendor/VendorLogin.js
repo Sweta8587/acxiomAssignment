@@ -17,6 +17,8 @@ const VendorLogin = () => {
 
     async function collectData() {
         try {
+            navigate("/LogedinVendorPortal");
+
             let response = await fetch("http://localhost:5000/logAsVendor", {
                 method: "POST",
                 body: JSON.stringify({

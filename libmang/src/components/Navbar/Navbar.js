@@ -6,7 +6,12 @@ const Navbar=()=>{
 
     return(
         <>
-        <div>this is navbar</div>
+        <div>
+        <center><b><h2>Product Management Website</h2></b></center>
+
+
+
+        </div>
         </>
     );
 };
