@@ -1,7 +1,7 @@
 .inparea{
-    padding: 20px;
+    padding: 25px;
     margin:auto;
-    height: 350px;
+    height: 500px;
     width: 750px;
     background-color: rgba(154, 152, 152, 0.584);
 }
@@ -21,8 +21,9 @@ button{
 }
 
 .llabel{
-    height: 30px;
-    width: 1500px;
+    height: 35px;
+    width: 700px;
+    padding-left: 200px;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
@@ -33,13 +34,16 @@ button{
 
 .blabel{
     height: 30px;
-    width: 1500px;
+    width: 150px;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
     padding: 5px;
     margin: 10px;
     background-color: rgb(155, 155, 155);
+}
+.user{
+    margin: 0px;
 }
 
 .alert {

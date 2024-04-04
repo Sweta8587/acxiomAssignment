@@ -1,5 +1,5 @@
 import React from "react";
-import alstyles from "../Admin/AdminLogin.module.css"
+import alstyles from "../Vendor/VendorLogin.module.css"
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -17,31 +17,39 @@ const VendorLogin = () => {
 
     async function collectData() {
         try {
-            let response = await fetch("http://localhost:5000/logAsVendor", {
+            const response = await fetch("http://localhost:5000/logAsVendor", {
                 method: "POST",
                 body: JSON.stringify({
                     UserId: username,
                     Password: password,
                 }),
                 headers: {
-                    "content-type": "Application/json",
+                    "content-type": "application/json",
                 },
             });
 
+            if(response.status===200){
+                const loginData = await response.json();
+                console.log("This is login user data",loginData);
+                navigate("/LogedinVendorPortal",{ state: { Nameis:loginData.Name }}); // Pass data to next route (optional)
+
+            }
+
             if (!response.ok) {
-                if (response.status === 404) {
-                    setShowAlert(true); // Set showAlert state to true to show the alert
+                const errorData = await response.json(); // Parse error data from response
+                if (errorData.message) {
+                    setShowAlert(true, errorData.message); // Set alert with specific message
                 } else {
-                    console.log("Response was not ok");
+                    console.log("Login failed with status:", response.status);
+                    setShowAlert(true, "Login failed. Please try again."); // Generic message
                 }
-
+            } else {
+                const loginData = await response.json(); // Parse response data (optional)
+                navigate("/LogedinVendorPortal", loginData); // Pass data to next route (optional)
             }
-            else {
-                navigate("/LogedinVendorPortal");
-            }
-
         } catch (error) {
-            console.log("Not able to fetch", error);
+            console.error("Error during login:", error);
+            setShowAlert(true, "An error occurred. Please try again."); // Generic error message
         }
     }
 
@@ -59,7 +67,7 @@ const VendorLogin = () => {
                     </NavLink>
 
                 </div>
-                <h1><label className={alstyles.llabel}>Event Management System</label></h1>
+                <h1><div className={alstyles.llabel}>Event Management System</div></h1>
                 <div className={alstyles.user}>
                     <label className={alstyles.llabel} htmlFor="username">User Id</label>
                     <input
@@ -99,7 +107,7 @@ const VendorLogin = () => {
 
                 </div>
                 <div>
-                    Not Vendor? <NavLink to="/SignUpAsVendor">
+                    New Vendor? <NavLink to="/SignUpAsVendor">
                         <button className={alstyles.blabel}>Sign Up</button>
                     </NavLink>
                 </div>

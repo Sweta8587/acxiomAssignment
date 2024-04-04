@@ -1,8 +1,12 @@
 .inparea{
+    padding: 25px;
     margin:auto;
-    height: 350px;
+    height: 300px;
     width: 750px;
     background-color: rgba(154, 152, 152, 0.584);
+}
+button{
+    cursor: pointer;
 }
 
 .inpbox{
@@ -13,12 +17,13 @@
 }
 
 .user{
-    margin:15px;
+    margin:50px;
 }
 
 .llabel{
-    height: 30px;
-    width: 1500px;
+    height: 35px;
+    width: 700px;
+    padding-left: 200px;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
@@ -28,12 +33,23 @@
 }
 
 .blabel{
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 150px;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
     padding: 5px;
-    margin: 30px;
+    margin: 10px;
     background-color: rgb(155, 155, 155);
+}
+.user{
+    margin: 0px;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }

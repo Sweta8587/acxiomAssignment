@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import alstyles from "../Admin/AdminLogin.module.css"
+import alstyles from "../Vendor/VendorSignUp.module.css"
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -9,9 +9,13 @@ const VenderSignUp = () => {
     const navigate = useNavigate();
 
     const [username, setUsername] = useState('');
+    const [name, setname] = useState('');
     const [password, setPassword] = useState('');
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
+    }
+    const handlenameChange = (e) => {
+        setname(e.target.value);
     }
     const handlePasswordChange = (e) => {
         setPassword(e.target.value);
@@ -22,6 +26,7 @@ const VenderSignUp = () => {
             let response = await fetch("http://localhost:5000/SignUpAsVendor", {
                 method: "POST",
                 body: JSON.stringify({
+                    Name:name,
                     UserId: username,
                     Password: password,
                 }),
@@ -58,6 +63,16 @@ const VenderSignUp = () => {
 
                 </div>
                 <h1><label className={alstyles.llabel}>Event Management System</label></h1>
+                <div className={alstyles.user}>
+                    <label className={alstyles.llabel} htmlFor="username">Name</label>
+                    <input
+                        id="name"
+                        className={alstyles.inpbox}
+                        value={name}
+                        onChange={handlenameChange}
+
+                    ></input>
+                </div>
                 <div className={alstyles.user}>
                     <label className={alstyles.llabel} htmlFor="username">User Id</label>
                     <input
