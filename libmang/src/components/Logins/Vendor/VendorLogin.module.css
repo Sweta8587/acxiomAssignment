@@ -5,6 +5,9 @@
     width: 750px;
     background-color: rgba(154, 152, 152, 0.584);
 }
+button{
+    cursor: pointer;
+}
 
 .inpbox{
     margin:20px;
